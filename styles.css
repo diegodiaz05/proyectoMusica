@@ -1,30 +1,232 @@
 .ini img{    
     width: 500px;
     height: 400px;
+    display: block;
 }
 .ini {
-    position: relative;     
-    display: inline-block;  
+    position: relative;
+    display: inline-block;
     width: 100%;            
     text-align: center;
 }
 .ini img {
     width: 100%;
     height: auto;
-    display: block;
 }
-
-
 .ini h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+
     
-    color: white;
-    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 175px;
     font-family: sans-serif;
     margin: 0;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
+.cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+}
+.texto {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.imagen {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.btn {
+    display: inline-block ;
+    width: auto ;
+    max-width: 150px; 
+    
+    padding: 8px 16px;
+    font-size: 12px;  
+    
+    
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
 
+
+
+.mi-elemento {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.con {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+}
+.tex {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+
+}
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image img {
+    max-width: 350px;  
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.btn {
+    display: inline-block !important;
+    width: auto ;
+    max-width: 150px;
+    padding: 8px 16px;
+    font-size: 12px ;  
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contenedor-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contenedor-horizontal img {
+    margin-top: 40px;
+    width: 300px;
+    height: auto;
+}
+.contenedor-horizontal {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    gap: 20px;
+}
+.contenedor-imagen {
+    position: relative;
+    display: inline-block;
+    width: 2550px;
+    max-width: 200000px;
+}
+
+
+.contenedor-imagen img {
+    width:auto;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.texto-encima {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para que se lea mejor si la imagen es clara */
+}
+
+.mi-elemento {
+    margin-top: 15px;
+    margin-bottom: 20px; 
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+.contenedor-botones {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contenedor-botones button {
+  background-color: #ff4d5a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;   
+}
+.contenedor-botones button {
+  background-color: #ff4d5a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background: linear-gradient(135deg, #ff4d5a, #ff3366);
+  padding: 50px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  color: white;
+  font-family: sans-serif;
+}
+
+
+.footer-columna {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.footer-columna h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.btn-footer {
+  background-color: rgba(255, 255, 255, 0.2); 
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4); 
+  border-radius: 20px; 
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-footer:hover {
+  background-color: white;
+  color: #ff3366;
+  border-color: white;
+}
